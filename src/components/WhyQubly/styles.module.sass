@@ -1,11 +1,18 @@
 @import '/src/styles/vars'
 
-.whyQubly
-    margin-bottom: 8vw
+@keyframes float
+    0%
+        top: -45%
+    50%
+        top: -50%
+    100%
+        top: -45%
 
 .whyQubly_benefits
     display: flex
     justify-content: space-between
+    width: 100%
+    margin-bottom: 8vw
 
 .whyQubly_benefit
     display: flex
@@ -31,3 +38,36 @@
 
 .whyQubly_benefitDescr
     color: $disabled
+
+// product teams
+
+.whyQubly_productTeams
+    @extend .whyQubly_benefits
+    align-items: center
+
+.whyQubly_productsImageContainer
+    width: 40%
+    height: 30vw
+    background: url('../../assets/icons/concentric-circles.svg') center center / contain no-repeat
+
+.whyQubly_productsInfo
+    width: 50%
+
+// engineering teams
+
+.whyQubly_engineeringTeams
+    @extend .whyQubly_benefits
+    position: relative
+    align-items: center
+
+.whyQubly_engineeringInfoBlockWrapper
+    width: 60%
+
+.whyQubly_pipelineImage
+    position: absolute
+    top: -45%
+    right: -27%
+    width: 44vw
+    height: 27vw
+    background: url('../../assets/images/data-driven-pipelines.png') center center / contain no-repeat
+    animation: float 2.6s ease infinite
