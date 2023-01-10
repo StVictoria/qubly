@@ -25,8 +25,13 @@ const Banner: FC = () => {
             <Button text='Learn more' variant='filled_secondary' />
           </div>
         </div>
-        <div className={s.banner_imageWrapper}>
-          <div className={s.banner_image} />
+        <div className={s.banner_image}>
+          <div className={`${s.banner_imageDot} ${s.dot1}`} />
+          <div className={`${s.banner_imageDot} ${s.dot2}`} />
+          <div className={`${s.banner_imageDot} ${s.dot3}`} />
+          <div className={`${s.banner_imageDot} ${s.dot4}`} />
+          <div className={`${s.banner_imageDot} ${s.dot5}`} />
+          <div className={`${s.banner_imageDot} ${s.dot6}`} />
         </div>
       </div>
     </section>

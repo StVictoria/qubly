@@ -1,3 +1,52 @@
+@import '/src/styles/vars.sass'
+
+@keyframes float
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(-10px)
+    100%
+        transform: translateY(0)
+
+@keyframes dotMove1
+    100%
+        top: 53%
+        left: 69%
+
+@keyframes dotMove2
+    100%
+        top: 61%
+        left: 59%
+
+@keyframes dotMove3
+    100%
+        top: 60%
+        left: 37%
+
+@keyframes dotMove4
+    100%
+        top: 48.2%
+        left: 56%
+
+@keyframes dotMove5
+    100%
+        top: 48%
+        left: 49%
+
+@keyframes dotMove6
+    20%
+        top: 51.5%
+        left: 53%
+    40%
+        top: 54%
+        left: 46%
+    60%
+        top: 56.4%
+        left: 52.7%
+    100%
+        top: 51.4%
+        left: 66.7%
+
 .banner
     width: 100vw
     background: url('../../assets/images/banner-background.png') center center / contain no-repeat
@@ -23,12 +72,47 @@
     > button:first-child
         margin-right: 1.1vw
 
-.banner_imageWrapper
+.banner_image
+    position: relative
     width: 45vw
     height: 50vw
-
-.banner_image
-    width: 100%
-    height: 100%
+    // animation: float 2.8s ease infinite
     background: url('../../assets/images/banner-image.png') center center / contain no-repeat
     z-index: 10
+
+.banner_imageDot
+    position: absolute
+    width: 4px
+    height: 4px
+    border-radius: 50%
+    background-color: #2ec5e1
+
+.dot1
+    top: 62%
+    left: 44%
+    animation: dotMove1 1.4s linear infinite
+
+.dot2
+    top: 53%
+    left: 36%
+    animation: dotMove2 1.4s linear infinite
+
+.dot3
+    top: 50%
+    left: 64%
+    animation: dotMove3 1.4s linear infinite
+
+.dot4
+    top: 55.2%
+    left: 36%
+    animation: dotMove4 1.4s linear infinite
+
+.dot5
+    top: 54%
+    left: 66%
+    animation: dotMove5 1.4s linear infinite
+
+.dot6
+    top: 49.2%
+    left: 46%
+    animation: dotMove6 2s linear infinite
