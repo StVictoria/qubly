@@ -1,0 +1,57 @@
+@import '/src/styles/vars.sass'
+
+.testimonial
+    width: 100%
+    background: url('../../assets/images/testimonial-background.png') center center / cover no-repeat
+    margin-bottom: 8vw
+    padding: 12vw 0 14vw 0
+
+.testimonial_content
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.testimonial_quote
+    width: 100%
+    font-size: 1.5vw
+    text-align: center
+
+.testimonial_photo
+    width: 80px
+    height: 80px
+    background: url('../../assets/images/person.png') center center / contain no-repeat
+    margin: 2vw 0
+
+.testimonial_companies
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    margin-top: 4vw
+    &::before
+        position: absolute
+        content: ''
+        top: -2vw
+        left: 0
+        right: 0
+        height: 1px
+        background-color: #DEC9FA
+
+.testimonial_company
+    width: 13%
+    height: 38px
+    background-position: center
+    background-repeat: no-repeat
+    background-size: contain
+
+.company1
+    background-image: url('../../assets/icons/tonkean-logo.svg')
+.company2
+    background-image: url('../../assets/icons/big-spring-logo.svg')
+.company3
+    background-image: url('../../assets/icons/clearbit-logo.svg')
+.company4
+    background-image: url('../../assets/icons/mine-logo.svg')
+.company5
+    background-image: url('../../assets/icons/shake-logo.svg')
