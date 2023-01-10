@@ -46,9 +46,103 @@
     align-items: center
 
 .whyQubly_productsImageContainer
-    width: 40%
-    height: 30vw
+    position: relative
+    width: 27vw
+    height: 29vw
     background: url('../../assets/icons/concentric-circles.svg') center center / contain no-repeat
+
+.whyQubly_product
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 4.7vw
+    height: 4.7vw
+    border-radius: 50%
+    top: 50%
+    left: 50%
+    margin-top: -2.3vw
+    margin-left: -2.3vw
+    background-color: $white
+    box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.12)
+    > div
+        width: 60%
+        height: 60%
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+
+@keyframes rotate1
+    0%
+        transform: rotate(0deg) translateX(13.5vw) rotate(0deg) // 1 + 2 gives ability to draw circle; 3 - for static pos of element
+    100%
+        transform: rotate(-360deg) translateX(13.5vw) rotate(360deg)
+
+// @keyframes rotate2
+//     0%
+//         transform: rotate(0deg) translateX(10vw) rotate(0deg)
+//     100%
+//         transform: rotate(-360deg) translateX(10vw) rotate(360deg)
+
+.product1
+    top: 16%
+    left: 12%
+    // animation: rotate1 10s linear infinite
+    > div
+        background-image: url('../../assets/images/product2.png')
+
+.product2
+    top: 2%
+    left: 50%
+    margin-left: -2.3vw
+    // animation: rotate1 10s linear 1.3s infinite
+    > div
+        background-image: url('../../assets/images/product1.png')
+
+.product3
+    top: 24%
+    left: 73%
+    // animation: rotate2 10s linear 3.1s infinite
+    > div
+        background-image: url('../../assets/images/product4.png')
+
+.product4
+    top: 51%
+    left: 87%
+    // animation: rotate2 10s linear 4.6s infinite
+    > div
+        background-image: url('../../assets/images/product5.png')
+
+.product5
+    top: 77%
+    left: 74%
+    // animation: rotate2 10s linear 6.1s infinite
+    > div
+        background-image: url('../../assets/images/product6.png')
+
+.product6
+    top: 88%
+    left: 23%
+    // animation: rotate1 10s linear 7.5s infinite
+    > div
+        background-image: url('../../assets/images/product7.png')
+
+.product7
+    top: 57%
+    left: 13%
+    // animation: rotate2 10s linear 8.5s infinite
+    > div
+        background-image: url('../../assets/images/product3.png')
+
+.product8
+    width: 7.4vw
+    height: 7.4vw
+    top: 50%
+    left: 50%
+    margin-left: -3.7vw
+    margin-top: -3.7vw
+    > div
+        background-image: url('../../assets/images/product2.png')
 
 .whyQubly_productsInfo
     width: 50%

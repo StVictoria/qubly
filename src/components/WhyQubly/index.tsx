@@ -37,14 +37,14 @@ const WhyQubly: FC = () => {
 
       <section className={s.whyQubly_productTeams}>
         <div className={s.whyQubly_productsImageContainer}>
-          <div className={`${s.whyQubly_product} ${s.product1}`} />
-          <div className={`${s.whyQubly_product} ${s.product2}`} />
-          <div className={`${s.whyQubly_product} ${s.product3}`} />
-          <div className={`${s.whyQubly_product} ${s.product4}`} />
-          <div className={`${s.whyQubly_product} ${s.product5}`} />
-          <div className={`${s.whyQubly_product} ${s.product6}`} />
-          <div className={`${s.whyQubly_product} ${s.product7}`} />
-          <div className={`${s.whyQubly_product} ${s.product8}`} />
+          <div className={`${s.whyQubly_product} ${s.product1}`}><div /></div>
+          <div className={`${s.whyQubly_product} ${s.product2}`}><div /></div>
+          <div className={`${s.whyQubly_product} ${s.product3}`}><div /></div>
+          <div className={`${s.whyQubly_product} ${s.product4}`}><div /></div>
+          <div className={`${s.whyQubly_product} ${s.product5}`}><div /></div>
+          <div className={`${s.whyQubly_product} ${s.product6}`}><div /></div>
+          <div className={`${s.whyQubly_product} ${s.product7}`}><div /></div>
+          <div className={`${s.whyQubly_product} ${s.product8}`}><div /></div>
         </div>
         <div className={s.whyQubly_productsInfo}>
           <InfoBlock
