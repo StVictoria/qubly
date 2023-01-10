@@ -1,0 +1,93 @@
+@import '/src/styles/vars.sass'
+
+.login
+    display: flex
+    justify-content: space-between
+    margin-bottom: 8vw
+
+.login_companiesBlock, .login_formBlock
+    width: 49%
+
+.login_trustedBy
+    position: relative
+    margin: 2.5vw 0 4vw 0
+    color: $disabled
+    width: 100%
+    text-align: center
+    &::before
+        position: absolute
+        content: ''
+        top: 50%
+        left: 0
+        width: 35%
+        height: 1px
+        background-color: #D6D6D6
+    &::after
+        position: absolute
+        content: ''
+        top: 50%
+        right: 0
+        width: 35%
+        height: 1px
+        background-color: #D6D6D6
+
+.login_companies
+    display: grid
+    grid-template-columns: repeat(2, 50%)
+    row-gap: 5.2vw
+
+.login_company
+    width: 50%
+    height: 2.6vw
+    background-position: center
+    background-repeat: no-repeat
+    background-size: contain
+
+.company1
+    background-image: url('../../assets/icons/accenture-logo.svg')
+.company2
+    background-image: url('../../assets/icons/react-logo.svg')
+.company3
+    background-image: url('../../assets/icons/airbnb-logo.svg')
+.company4
+    background-image: url('../../assets/icons/sky-logo.svg')
+
+.login_formBlock
+    background-color: $primary_light
+
+.login_formWrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 80%
+    background-color: $white
+    border-radius: 8px
+    box-shadow: 4px 4px 12px rgba(#8989A2, 0.12)
+    margin: 0 auto
+    margin-top: -7%
+    padding: 2vw 3vw
+    > input
+        margin-bottom: 1.2vw
+
+.login_buttonWrapper
+    width: 100%
+    margin: 1.2vw 0
+
+.login_google
+    width: 100%
+    height: 48px
+    background: url('../../assets/images/sign-in-with-google.png') center center / contain no-repeat
+    margin-top: 1.2vw
+
+.login_switchForm
+    display: flex
+    justify-content: center
+    width: 100%
+    padding-top: 1.2vw
+    border-top: 1px solid #8989A2
+    margin-top: 1.4vw
+    color: $disabled
+
+.login_switchButton
+    margin-left: 0.2vw
+    color: $primary
