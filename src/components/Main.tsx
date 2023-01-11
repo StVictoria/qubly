@@ -4,6 +4,7 @@ import Login from './Login'
 import Testimonial from './Testimonial'
 import WhyQubly from './WhyQubly'
 import Header from './_base/Header'
+import Footer from './_common/Footer'
 
 const Main: FC = () => {
   return (
@@ -13,6 +14,7 @@ const Main: FC = () => {
       <WhyQubly />
       <Testimonial />
       <Login />
+      <Footer />
     </>
   )
 }
