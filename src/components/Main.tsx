@@ -5,6 +5,7 @@ import Testimonial from './Testimonial'
 import WhyQubly from './WhyQubly'
 import Header from './_base/Header'
 import Footer from './_common/Footer'
+import s from './Main.module.sass'
 
 const Main: FC = () => {
   return (
@@ -15,6 +16,10 @@ const Main: FC = () => {
       <Testimonial />
       <Login />
       <Footer />
+      <div className={s.copyrightsBlock}>
+        <p>Rahul Rao</p>
+        <div className={s.copyrights} />
+      </div>
     </>
   )
 }
