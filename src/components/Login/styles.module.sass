@@ -1,12 +1,16 @@
-@import '/src/styles/vars.sass'
+@import '/src/styles/mixins.sass'
 
 .login
     display: flex
     justify-content: space-between
     margin-bottom: 8vw
+    @include adaptive(small)
+        flex-direction: column
 
 .login_companiesBlock, .login_formBlock
     width: 49%
+    @include adaptive(small)
+        width: 100%
 
 .login_trustedBy
     position: relative
@@ -14,6 +18,8 @@
     color: $disabled
     width: 100%
     text-align: center
+    @include adaptive(small)
+        margin: 14px 0
     &::before
         position: absolute
         content: ''
@@ -35,6 +41,9 @@
     display: grid
     grid-template-columns: repeat(2, 50%)
     row-gap: 5.2vw
+    @include adaptive(small)
+        grid-template-columns: repeat(1, 100%)
+        margin-bottom: 20px
 
 .login_company
     width: 50%
@@ -42,6 +51,9 @@
     background-position: center
     background-repeat: no-repeat
     background-size: contain
+    @include adaptive(small)
+        width: 100%
+        height: 20px
 
 .company1
     background-image: url('../../assets/icons/accenture-logo.svg')
@@ -66,12 +78,18 @@
     margin: 0 auto
     margin-top: -7%
     padding: 2vw 3vw
+    @include adaptive(small)
+        margin-top: 0
     > input
         margin-bottom: 1.2vw
+        @include adaptive(small)
+            margin-bottom: 14px
 
 .login_buttonWrapper
     width: 100%
     margin: 1.2vw 0
+    @include adaptive(small)
+    margin: 14px 0
 
 .login_google
     width: 100%
@@ -87,6 +105,8 @@
     border-top: 1px solid #8989A2
     margin-top: 1.4vw
     color: $disabled
+    @include adaptive(small)
+        margin-top: 14px
 
 .login_switchButton
     margin-left: 0.2vw
