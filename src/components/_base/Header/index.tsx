@@ -26,6 +26,11 @@ const Header: FC = () => {
         <nav>{renderLinks()}</nav>
         <Button text='Start free trial' variant='outlined' />
       </div>
+      <button className={s.header_burger}>
+          <div className={s.header_burgerLine} />
+          <div className={s.header_burgerLine} />
+          <div className={s.header_burgerLine} />
+      </button>
     </header>
   )
 }

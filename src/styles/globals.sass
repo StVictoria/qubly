@@ -1,17 +1,17 @@
-@import './vars'
+@import './mixins'
 
 *
     box-sizing: border-box
 
-// ::-webkit-scrollbar
-//     width: 8px
+::-webkit-scrollbar
+    width: 8px
 
-// ::-webkit-scrollbar-track
-//     background: $color_black
+::-webkit-scrollbar-track
+    background: inherit
 
-// ::-webkit-scrollbar-thumb
-//     background: #2c2c4f
-//     border-radius: 4px
+::-webkit-scrollbar-thumb
+    background: $primary
+    border-radius: 4px
 
 html
     overflow-x: hidden
@@ -39,8 +39,8 @@ a
 p, a, button, input
     font-size: 1vw
     line-height: 140%
-    // @include adaptive(medium)
-    //     font-size: 4.3vw
+    @include adaptive(small)
+        font-size: 4.3vw
 
 ul, li
     list-style: none

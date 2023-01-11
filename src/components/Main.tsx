@@ -11,7 +11,7 @@ const Main: FC = () => {
   return (
     <>
       <Header />
-      <Banner />
+      {/* <Banner /> */}
       <WhyQubly />
       <Testimonial />
       <Login />
