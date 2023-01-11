@@ -27,9 +27,9 @@ const Header: FC = () => {
         <Button text='Start free trial' variant='outlined' />
       </div>
       <button className={s.header_burger}>
-          <div className={s.header_burgerLine} />
-          <div className={s.header_burgerLine} />
-          <div className={s.header_burgerLine} />
+        <div className={s.header_burgerLine} />
+        <div className={s.header_burgerLine} />
+        <div className={s.header_burgerLine} />
       </button>
     </header>
   )

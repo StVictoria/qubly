@@ -1,4 +1,4 @@
-@import '/src/styles/vars.sass'
+@import '/src/styles/mixins.sass'
 
 @keyframes float
     0%
@@ -53,26 +53,44 @@
     margin-top: -100px // header
     padding: 12vw 0 16vw 0
     margin-bottom: 8vw
+    @include adaptive(small)
+        margin-top: 0
+        padding: 20px
+        padding-bottom: 100px
 
 .banner_content
     display: flex
     justify-content: space-between
     align-items: center
+    @include adaptive(small)
+        flex-direction: column
 
 .banner_info
     width: 50vw
+    @include adaptive(small)
+        width: 100%
 
 .banner_title
     font-size: 3.3vw
     margin: 1.7vw 0
+    @include adaptive(small)
+        font-size: 30px
+        margin: 14px 0
 
 .banner_descr
     margin-bottom: 1.7vw
     opacity: 0.5
+    @include adaptive(small)
+        margin-bottom: 14px
 
 .banner_buttons
+    @include adaptive(small)
+        display: flex
+        flex-direction: column
     > button:first-child
         margin-right: 1.1vw
+        @include adaptive(small)
+            margin-bottom: 14px
 
 .banner_image
     position: relative
@@ -81,6 +99,9 @@
     // animation: float 2.8s ease infinite
     background: url('../../assets/images/banner-image.png') center center / contain no-repeat
     z-index: 10
+    @include adaptive(small)
+        width: 100%
+        height: 200px
 
 .banner_imageDot
     position: absolute

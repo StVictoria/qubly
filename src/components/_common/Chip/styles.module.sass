@@ -1,4 +1,4 @@
-@import '/src/styles/vars.sass'
+@import '/src/styles/mixins.sass'
 
 .chip
     display: flex
@@ -8,12 +8,18 @@
     padding: 0.5vw 1vw
     border-radius: 1.2vw
     width: fit-content
+    @include adaptive(small)
+        padding: 8px 12px
+        border-radius: 24px
 
 .chip_icon
     width: 1.8vw
     height: 1.4vw
-    margin-right: 0.7vw
+    margin-right: 10px
+    @include adaptive(small)
+        width: 20px
+        height: 20px
 
 .chip_link
     border-bottom: 1px solid $primary
-    margin-left: 0.3vw
+    margin-left: 5px

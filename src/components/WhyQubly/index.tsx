@@ -66,7 +66,7 @@ const WhyQubly: FC = () => {
           descrWidth={80}
         />
         </div>
-        <div className={s.whyQubly_pipelineImage} />
+        {/* <div className={s.whyQubly_pipelineImage} /> */}
       </section>
     </section>
   )
