@@ -1,3 +1,5 @@
+@import '/src/styles/mixins.sass'
+
 .footer
     width: 100%
     background-color: #FBFCFF
@@ -6,14 +8,22 @@
 .footer_content
     display: flex
     justify-content: space-between
+    @include adaptive(small)
+        flex-direction: column
 
 .footer_leftSection, .footer_rightSection
     width: 20%
+    @include adaptive(small)
+        width: 100%
+        margin-bottom: 30px
 
 .footer_middleSection
     display: flex
     justify-content: space-between
     width: 55%
+    @include adaptive(small)
+        width: 100%
+        flex-direction: column
 
 .footer_rightSectionDescr
     margin-top: 1.1vw
@@ -40,12 +50,20 @@
 .footer_social3
     background-image: url('../../../assets/icons/instagram.svg')
 
+.footer_middleSection > div
+    @include adaptive(small)
+        margin-bottom: 20px
+
 .footer_middleSection, .footer_rightSection
     h3
         margin-bottom: 1.3vw
+        @include adaptive(small)
+            margin-bottom: 14px
 
 .footer_middleSectionLink a
     font-size: 0.9vw
+    @include adaptive(small)
+        font-size: 14px
 
 .footer_middleSectionLink:not(:last-child)
     margin-bottom: 1vw
@@ -62,3 +80,7 @@
     height: 1.4vw
     margin-top: -0.6vw
     background: url('../../../assets/icons/send.svg') center center / contain no-repeat
+    @include adaptive(small)
+        width: 20px
+        height: 20px
+        margin-top: -10px

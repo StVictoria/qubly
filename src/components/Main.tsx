@@ -18,7 +18,7 @@ const Main: FC = () => {
       <Footer />
       <div className={s.copyrightsBlock}>
         <p>Rahul Rao</p>
-        <div className={s.copyrights} />
+        <div className={s.copyrightsIcon} />
       </div>
     </>
   )
