@@ -16,7 +16,6 @@
     @include adaptive(small)
         flex-direction: column
 
-
 .whyQubly_benefit
     display: flex
     flex-direction: column
@@ -42,7 +41,7 @@
 .whyQubly_benefitTitle
     margin: 1.1vw 0
     @include adaptive(small)
-        margin: 14px 0 
+        margin: 14px 0
 
 .whyQubly_benefitDescr
     color: $disabled
@@ -78,15 +77,15 @@
     margin-left: -2.3vw
     background-color: $white
     box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.12)
+    @include adaptive(small)
+        width: 50px
+        height: 50px
     > div
         width: 60%
         height: 60%
         background-position: center
         background-repeat: no-repeat
         background-size: contain
-        @include adaptive(small)
-            width: 70px
-            height: 70px
 
 @keyframes rotate1
     0%
@@ -104,6 +103,9 @@
     top: 16%
     left: 12%
     // animation: rotate1 10s linear infinite
+    @include adaptive(small)
+        top: 10%
+        left: 8%
     > div
         background-image: url('../../assets/images/product2.png')
 
@@ -112,6 +114,9 @@
     left: 50%
     margin-left: -2.3vw
     // animation: rotate1 10s linear 1.3s infinite
+    @include adaptive(small)
+        top: -3%
+        left: 45%
     > div
         background-image: url('../../assets/images/product1.png')
 
@@ -119,6 +124,9 @@
     top: 24%
     left: 73%
     // animation: rotate2 10s linear 3.1s infinite
+    @include adaptive(small)
+        top: 22%
+        left: 73%
     > div
         background-image: url('../../assets/images/product4.png')
 
@@ -126,6 +134,9 @@
     top: 51%
     left: 87%
     // animation: rotate2 10s linear 4.6s infinite
+    @include adaptive(small)
+        top: 47%
+        left: 82%
     > div
         background-image: url('../../assets/images/product5.png')
 
@@ -133,6 +144,9 @@
     top: 77%
     left: 74%
     // animation: rotate2 10s linear 6.1s infinite
+    @include adaptive(small)
+        top: 70%
+        left: 69%
     > div
         background-image: url('../../assets/images/product6.png')
 
@@ -140,6 +154,9 @@
     top: 88%
     left: 23%
     // animation: rotate1 10s linear 7.5s infinite
+    @include adaptive(small)
+        top: 85%
+        left: 19%
     > div
         background-image: url('../../assets/images/product7.png')
 
@@ -147,6 +164,9 @@
     top: 57%
     left: 13%
     // animation: rotate2 10s linear 8.5s infinite
+    @include adaptive(small)
+        top: 49%
+        left: 7%
     > div
         background-image: url('../../assets/images/product3.png')
 
@@ -157,6 +177,11 @@
     left: 50%
     margin-left: -3.7vw
     margin-top: -3.7vw
+    @include adaptive(small)
+        width: 70px
+        height: 70px
+        margin-top: -35px
+        margin-left: -35px
     > div
         background-image: url('../../assets/icons/logo.svg')
 
