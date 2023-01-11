@@ -1,4 +1,4 @@
-@import '/src/styles/vars.sass'
+@import '/src/styles/mixins.sass'
 
 .infoBlock
     display: flex
@@ -11,7 +11,12 @@
 .infoBlock_title
     font-size: 2.1vw
     margin: 1.6vw 0
+    @include adaptive(small)
+        font-size: 18px
+        margin: 14px 0
 
 .infoBlock_descr
     color: $disabled
     margin-bottom: 2vw
+    @include adaptive(small)
+        margin-bottom: 14px
