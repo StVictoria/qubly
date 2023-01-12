@@ -13,6 +13,41 @@
     background: $primary
     border-radius: 4px
 
+// preloader --------------------
+
+@keyframes pulse
+    0%
+        transform: scale3d(1, 1, 1)
+    50%
+        transform: scale3d(1.2, 1.2, 1.2)
+    100%
+        transform: scale3d(1, 1, 1)
+
+.preloader
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $white
+    z-index: 9999
+    opacity: 0
+    transform: scale(5)
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition-property: transform, opacity
+
+.preloader_show
+    opacity: 1
+    transform: scale(1)
+
+.preloader_logo
+    animation: pulse 2s infinite
+
+// ------------------------------
+
 html
     overflow-x: hidden
     margin: 0
@@ -70,8 +105,3 @@ h3
     @include adaptive(small)
         max-width: $containerSmall
         padding: 0 20px
-
-.sectionMB
-    margin-bottom: 10vw
-    // @include adaptive(medium)
-    //     margin-bottom: 140px
