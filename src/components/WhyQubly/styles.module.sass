@@ -51,7 +51,8 @@
 .whyQubly_productTeams
     @extend .whyQubly_benefits
     align-items: center
-    flex-direction: column-reverse
+    @include adaptive(small)
+        flex-direction: column-reverse
 
 .whyQubly_productsImageContainer
     position: relative
@@ -87,88 +88,101 @@
         background-repeat: no-repeat
         background-size: contain
 
-@keyframes rotate1
-    0%
-        transform: rotate(0deg) translateX(13.5vw) rotate(0deg) // 1 + 2 gives ability to draw circle; 3 - for static pos of element
-    100%
-        transform: rotate(-360deg) translateX(13.5vw) rotate(360deg)
+@keyframes spinAround1
+    from
+        transform: rotate(0deg) translate(13.5vw) // 1 + 2 gives ability to draw circle; 3 - for static pos of element
+    to
+        transform: rotate(360deg) translate(13.5vw)
 
-// @keyframes rotate2
-//     0%
-//         transform: rotate(0deg) translateX(10vw) rotate(0deg)
-//     100%
-//         transform: rotate(-360deg) translateX(10vw) rotate(360deg)
+@keyframes spinAround2
+    from
+        transform: rotate(0deg) translate(10vw)
+    to
+        transform: rotate(360deg) translate(10vw)
+
+@keyframes rotate
+    from
+        transform: rotate(0deg)
+    to
+        transform: rotate(-360deg)
 
 .product1
-    top: 16%
-    left: 12%
-    // animation: rotate1 10s linear infinite
+    // top: 16%
+    // left: 12%
+    animation: spinAround1 10s linear infinite
     @include adaptive(small)
         top: 10%
         left: 8%
     > div
         background-image: url('../../assets/images/product2.png')
+        animation: rotate 10s linear infinite
 
 .product2
-    top: 2%
-    left: 50%
+    // top: 2%
+    // left: 50%
     margin-left: -2.3vw
-    // animation: rotate1 10s linear 1.3s infinite
+    animation: spinAround1 10s linear -1.3s infinite
     @include adaptive(small)
         top: -3%
         left: 45%
     > div
         background-image: url('../../assets/images/product1.png')
+        animation: rotate 10s linear -1.3s infinite
 
 .product3
-    top: 24%
-    left: 73%
-    // animation: rotate2 10s linear 3.1s infinite
+    // top: 24%
+    // left: 73%
+    animation: spinAround2 10s linear -2.7s infinite
     @include adaptive(small)
         top: 22%
         left: 73%
     > div
         background-image: url('../../assets/images/product4.png')
+        animation: rotate 10s linear -2.7s infinite
 
 .product4
-    top: 51%
-    left: 87%
-    // animation: rotate2 10s linear 4.6s infinite
+    // top: 51%
+    // left: 87%
+    animation: spinAround2 10s linear -4s infinite
     @include adaptive(small)
         top: 47%
         left: 82%
     > div
         background-image: url('../../assets/images/product5.png')
+        animation: rotate 10s linear -4s infinite
 
 .product5
-    top: 77%
-    left: 74%
-    // animation: rotate2 10s linear 6.1s infinite
+    // top: 77%
+    // left: 74%
+    animation: spinAround2 10s linear -5.5s infinite
     @include adaptive(small)
         top: 70%
         left: 69%
     > div
         background-image: url('../../assets/images/product6.png')
+        animation: rotate 10s linear -5.5s infinite
 
 .product6
-    top: 88%
-    left: 23%
-    // animation: rotate1 10s linear 7.5s infinite
+    // top: 88%
+    // left: 23%
+    animation: spinAround1 10s linear -7s infinite
     @include adaptive(small)
         top: 85%
         left: 19%
     > div
         background-image: url('../../assets/images/product7.png')
+        animation: rotate 10s linear -7s infinite
 
 .product7
-    top: 57%
-    left: 13%
-    // animation: rotate2 10s linear 8.5s infinite
+    // top: 57%
+    // left: 13%
+    animation: spinAround2 10s linear -8.5s infinite
     @include adaptive(small)
         top: 49%
         left: 7%
     > div
         background-image: url('../../assets/images/product3.png')
+        animation: rotate 10s linear -8.5s infinite
 
 .product8
     width: 7.4vw
