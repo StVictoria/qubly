@@ -9,7 +9,7 @@ import {
   productLinks,
   supportLinks,
 } from '../../../static/footerLinks'
-import Input from '../Input'
+import Input from '../../_common/Input'
 import Link from 'next/link'
 
 const Footer: FC = () => {
@@ -62,6 +62,10 @@ const Footer: FC = () => {
             <button className={s.footer_newsletterFormButton} type='submit' />
           </form>
         </div>
+      </div>
+      <div className={s.copyrightsBlock}>
+        <p>Rahul Rao</p>
+        <div className={s.copyrightsIcon} />
       </div>
     </footer>
   )

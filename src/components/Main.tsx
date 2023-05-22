@@ -4,7 +4,7 @@ import Login from './Login'
 import Testimonial from './Testimonial'
 import WhyQubly from './WhyQubly'
 import Header from './_base/Header'
-import Footer from './_common/Footer'
+import Footer from './_base/Footer'
 import s from './Main.module.sass'
 
 const Main: FC = () => {
@@ -16,10 +16,6 @@ const Main: FC = () => {
       <Testimonial />
       <Login />
       <Footer />
-      <div className={s.copyrightsBlock}>
-        <p>Rahul Rao</p>
-        <div className={s.copyrightsIcon} />
-      </div>
     </>
   )
 }
